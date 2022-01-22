@@ -1,0 +1,56 @@
+.game-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', monospace;
+}
+
+body {
+    background: #F2F2EF;
+}
+
+.card {
+    background: #FEF2D7;
+}
+
+.btn {
+    color: white;
+    background: #006F74;
+    border-color: #006F74;
+}
+
+#btnEqual {
+    background: #F38C76;
+    border-color: #F38C76;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.flare {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    transform: skewX(-45deg);
+    animation: flareAnimation;
+    left: -150%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 3s infinite linear;
+}
+
+@keyframes flareAnimation {
+    0% {
+        left: -150%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+#btnRetry {
+    color: white;
+    background: #81CDC2;
+    border-color: #81CDC2;
+}
